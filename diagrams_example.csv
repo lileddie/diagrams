@@ -1,0 +1,33 @@
+## Topology
+# label: %host%
+# namespace: csvimport-
+# connect: {"from":"connected", "to":"entry", "style": "curved=1;rounded=0;endArrow=none;endFill=0;startArrow=none;startFill=0;"}
+#
+## Shapes and their styles
+# stylename: type
+# styles: {"router": "points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0],[0.145,0.145,0],[0.8555,0.145,0],[0.855,0.8555,0],[0.145,0.855,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=router;fillColor=#FAFAFA;strokeColor=#005073;",\
+# "l2switch": "points=[[0.015,0.015,0],[0.985,0.015,0],[0.985,0.985,0],[0.015,0.985,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=l2_switch;fillColor=#FAFAFA;strokeColor=#005073;",\
+# "l3switch": "points=[[0.015,0.015,0],[0.985,0.015,0],[0.985,0.985,0],[0.015,0.985,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=l3_switch;fillColor=#FAFAFA;strokeColor=#005073;",\
+# "wap": "points=[[0.03,0.36,0],[0.18,0,0],[0.5,0.34,0],[0.82,0,0],[0.97,0.36,0],[1,0.67,0],[0.975,0.975,0],[0.5,1,0],[0.025,0.975,0],[0,0.67,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.wireless_access_point;fillColor=#005073;strokeColor=none;"}
+# ignore: entry,zone,type,connected
+# width: 50
+# height: 50
+# padding: 10
+# nodespacing: 40
+# levelspacing: 100
+# edgespacing: 40
+# layout: verticalflow
+## CSV data starts below this line
+entry,type,host,connected
+1,router,somesite-1h1-rtr1,"3"
+2,router,somesite-1h1-rtr2,"4"
+3,l2switch,somesite-1h1-asw1,"5,6,9"
+4,l2switch,somesite-1h1-asw2,"8,10"
+5,l2switch,somesite-2h1-asw1,"7,11"
+6,l2switch,somesite-2h1-asw2,
+7,l2switch,somesite-2h1-asw3,12
+8,l2switch,somesite-1h1-asw3,
+9,wap,somesite-wap1,
+10,wap,somesite-wap2,
+11,wap,somesite-wap3,
+12,wap,somesite-wap4,

@@ -19,15 +19,10 @@
 # layout: verticalflow
 ## CSV data starts below this line
 entry,type,host,connected
-1,router,somesite-1h1-rtr1,"3"
-2,router,somesite-1h1-rtr2,"4"
-3,l2switch,somesite-1h1-asw1,"5,6,9"
-4,l2switch,somesite-1h1-asw2,"8,10"
-5,l2switch,somesite-2h1-asw1,"7,11"
-6,l2switch,somesite-2h1-asw2,
-7,l2switch,somesite-2h1-asw3,12
-8,l2switch,somesite-1h1-asw3,
-9,wap,somesite-wap1,
-10,wap,somesite-wap2,
-11,wap,somesite-wap3,
-12,wap,somesite-wap4,
+1,router,wa-1h1-rtr1,"3"
+3,l3switch,wa-1h1-rsw1,"7,5"
+5,l2switch,wa-1h1-asw1,"6"
+6,l2switch,wa-1h1-asw2,""
+7,l2switch,wa-2h1-asw1,"8,9"
+8,wap,wa-ap2,
+9,wap,wa-ap1,
